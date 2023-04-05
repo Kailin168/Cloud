@@ -16,3 +16,5 @@ Amazon Web Services (AWS) is a cloud computing platform that provides a wide ran
 
 Sample AWS S3 Bucket: This sample demonstrates how to create an AWS S3 bucket using the AWS Management Console.
 Sample AWS Lambda Function: This sample demonstrates how to create an AWS Lambda function using the AWS Management Console.
+
+<!-- Kubernetes and Google cloud -->
