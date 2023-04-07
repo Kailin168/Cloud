@@ -18,3 +18,4 @@ Sample AWS S3 Bucket: This sample demonstrates how to create an AWS S3 bucket us
 Sample AWS Lambda Function: This sample demonstrates how to create an AWS Lambda function using the AWS Management Console.
 
 <!-- Kubernetes and Google cloud -->
+Devops Technologies
