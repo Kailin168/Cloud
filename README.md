@@ -1,4 +1,4 @@
-# Cloud Computing and Devops Technologies
+# Cloud Computing and Devops Technologies ☁️
 This repository contains notes and samples related to cloud computing using technologies such as Terraform, Docker, Kubernetes, and AWS/Google Cloud.
 
 ## Terraform
