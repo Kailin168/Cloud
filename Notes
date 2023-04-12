@@ -6,3 +6,29 @@ Pillars we will develop from this bootcamp
 
 3. Behavioral Pillar (soft skills, networking and personal marketing)
 
+Cloud Projects- cloud migration, from on premises to google cloud platform
+
+Mission 1
+the power of cloud computing in your career
+
+IT PRO (DBA, DEV, ETC) -> IT Pro with cloud knowledge -> Opportunities
+
+Data center- room of servers
+cloud computing - use the server on demand with fee, it is less cheaper than maintaining it yourself. 
+
+Cloud provider building blocks
+Regions (countries, all isolated from other regions) -> Zones (isolated) -> Services (computer services, storage services, date base services, networking services)
+
+>>> Cloud project <<<
+Luxury hotel that want to migrate their info into cloud. they want to add all the covid test result to cloud so everyone can see the result 
+
+The problem- corporate date center (on-premises)
+Application server(vm) <-> Datebase server (mySQL)
+
+Solution Architecture  - Google could platform(region) - AWS S3 (Region)
+Application Server -> Google container Registry(GCR) -> Google Cloud SQL <-> Deploy Google Kubernetes Engine (GKE)
+
+The S3 will store the PDF and the Google Cloud will store all the datebase
+
+
+ 
