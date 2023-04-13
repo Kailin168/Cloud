@@ -50,6 +50,7 @@ unzip mission2.zip
 
 CODE 
 mysql --host=<public_ip_cloudsql> --port=3306 -u app -p
+get that in your overview that ip add and replace it at the public ip
 
 - Once you're connected to the database instance, create the products table for testing purposes
 
@@ -59,6 +60,7 @@ source ~/mission2_en/mission2/en/db/create_table.sql;
 show tables;
 exit;
 
+If no issue then ignore this area.
 - Enable Cloud Build API via Cloud Shell.
 
 CODE
@@ -87,9 +89,14 @@ Example: 989404026119@cloudbuild.gserviceaccount.com Cloud Build Service Account
 
 Build the Docker image and push it to Google Container Registry. Please replace the <PROJECT_ID> with your My First Project ID. 
 
+
+Start here again
 CODE 
 cd ~/mission2_en/mission2/en/app
 gcloud builds submit --tag gcr.io/<PROJECT_ID>/luxxy-covid-testing-system-app-en
+// gcloud builds submit --tag gcr.io/aqueous-rarity-383022/luxxy-covid-testing-system-app-en
+
+
 
 - Open the Cloud Editor and edit the Kubernetes deployment file (luxxy-covid-testing-system.yaml) and update the variables below in red with your <PROJECT_ID> on the Google Container Registry path, AWS Bucket name, AWS Keys (from luxxy-covid-testing-system-en-app1.csv) and Cloud SQL Database Private IP.
 
@@ -106,7 +113,7 @@ luxxy-covid-testing-system.yaml
         - name: S3_SECRET_ACCESS_KEY
           value: "xxxxxxxxxxxxxxxxxxxx"
         - name: DB_HOST_NAME
-          value: "172.21.0.3"
+          value: "172.21.0.3" //change this to your private ip
 
 - Connect to the GKE (Google Kubernetes Engine) cluster via Console (follow the video)
 - Deploy the application Luxxy in the Cluster
@@ -118,3 +125,5 @@ kubectl apply -f luxxy-covid-testing-system.yaml
 
 - Get the Public IP and test the application ([CLICK HERE to download COVID-19 Testing result sample](https://tcb-public-events.s3.amazonaws.com/icp/mission2.zip))
 - You should see the app up & running! Congrats! 🎉
+
+
