@@ -1,5 +1,5 @@
 # Cloud Computing and Devops Technologies ☁️
-This repository contains notes and samples related to cloud computing using technologies such as Terraform, Docker, Kubernetes, and AWS/Google Cloud.
+This repository contains notes and real-life web application related to cloud computing using technologies such as Terraform, Docker, Kubernetes, and AWS/Google Cloud.
 
 ## Terraform
 #### Terraform is an open-source infrastructure-as-code tool that enables users to define and provision infrastructure in a declarative manner. The following samples demonstrate how to use Terraform to provision resources in AWS:
